@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Harf-e-Balouch</string>
+    <string name="app_title">Harf-e-Balouch</string>
+    <string name="subtitle">Learn Balochi</string>
+
+    <string name="username_hint">User Name</string>
+    <string name="password_hint">Password</string>
+
+    <string name="sign_in">SIGN IN</string>
+    <string name="cancel">CANCEL</string>
+
+    <string name="background_description">Balochi carpet background</string>
+
+</resources>

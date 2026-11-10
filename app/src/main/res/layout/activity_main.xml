@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/balochi_bg">
+
+    <!-- Main White Card -->
+    <LinearLayout
+        android:layout_width="@dimen/card_width"
+        android:layout_height="@dimen/card_height"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/rounded_white"
+        android:padding="@dimen/card_padding">
+
+        <!-- App Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/title_margin"
+            android:gravity="center"
+            android:text="@string/app_title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/title_size"
+            android:textStyle="bold"
+            android:fontFamily="cursive"/>
+
+        <!-- Subtitle -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/subtitle_margin"
+            android:gravity="center"
+            android:text="@string/subtitle"
+            android:textColor="@color/black"
+            android:textSize="@dimen/subtitle_size"
+            android:textStyle="bold"/>
+
+        <!-- Username -->
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_height"
+            android:layout_marginTop="@dimen/username_margin"
+            android:layout_marginHorizontal="@dimen/input_margin"
+            android:hint="@string/username_hint"
+            android:textSize="@dimen/input_text_size"
+            android:singleLine="true"
+            android:inputType="textPersonName"
+            android:drawableStart="@drawable/userperson"
+            android:drawablePadding="@dimen/icon_padding"
+            android:backgroundTint="@color/input_underline"
+            android:padding="@dimen/input_padding"/>
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_height"
+            android:layout_marginTop="@dimen/password_margin"
+            android:layout_marginHorizontal="@dimen/input_margin"
+            android:hint="@string/password_hint"
+            android:textSize="@dimen/input_text_size"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/key"
+            android:drawablePadding="@dimen/icon_padding"
+            android:backgroundTint="@color/input_underline"
+            android:padding="@dimen/input_padding"/>
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/buttons_margin"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSignIn"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:text="@string/sign_in"
+                android:textSize="@dimen/button_text_size"
+                android:textColor="@color/black"
+                android:background="@drawable/grey_button"
+                android:backgroundTint="@null"
+                android:elevation="@dimen/button_elevation"/>
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginStart="@dimen/button_spacing"
+                android:text="@string/cancel"
+                android:textSize="@dimen/button_text_size"
+                android:textColor="@color/black"
+                android:background="@drawable/grey_button"
+                android:backgroundTint="@null"
+                android:elevation="@dimen/button_elevation"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
